@@ -1,0 +1,8 @@
+#!/bin/sh
+# THIS IS A TEMPLATE FILE! Fill in the variables and copy it to `aio-publisher`.
+
+AIO_KEY="your-key"
+AIO_USER="your-username"
+AIO_FEED="your-feed-id"
+
+/usr/bin/i2c-temp | curl https://io.adafruit.com/api/feeds/$AIO_FEED/data -H "X-AIO-Key: $AIO_KEY" -d @-

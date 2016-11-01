@@ -1,0 +1,15 @@
+# THIS IS A TEMPLATE FILE!
+# Fill in `ssid` and `psk` and copy it to wpa-supplicant.conf-sane
+
+ctrl_interface=/var/run/wpa_supplicant
+ctrl_interface_group=0
+update_config=1
+
+network={
+        ssid="YOUR_SSID"
+        proto=RSN
+        key_mgmt=WPA-PSK
+        pairwise=CCMP TKIP
+        group=CCMP TKIP
+        psk="YOUR_WIFI_PASSWORD"
+}

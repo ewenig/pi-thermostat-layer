@@ -1,0 +1,4 @@
+SANITY_VERSION 1
+TMPDIR /opt/tmp
+SSTATE_DIR /opt/sstate-cache
+NATIVELSBSTRING Debian-8.6
